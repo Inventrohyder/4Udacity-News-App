@@ -18,6 +18,7 @@
         android:ellipsize="end"
         android:maxLines="2"
         android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/textColorNewsTitle"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/news_date"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +36,7 @@
         android:layout_marginRight="8dp"
         android:textAllCaps="true"
         android:textAppearance="?android:textAppearanceSmall"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/textColorNewsSection"
         android:textStyle="bold"
         app:fontFamily="sans-serif"
         app:layout_constraintEnd_toStartOf="@+id/news_author"
@@ -50,6 +51,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:textColor="@color/textColorDateTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Mar 6, 2010" />
@@ -61,6 +63,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:textColor="@color/textColorDateTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/news_date"
         tools:text="3:00 PM" />
@@ -71,14 +74,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:gravity="end"
-        tools:text="Erin Delahunty"
-        android:textStyle="italic|bold"
         android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="italic|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/news_section"
-        app:layout_constraintTop_toBottomOf="@+id/news_title" />
+        app:layout_constraintTop_toBottomOf="@+id/news_title"
+        tools:text="Erin Delahunty" />
 </android.support.constraint.ConstraintLayout>

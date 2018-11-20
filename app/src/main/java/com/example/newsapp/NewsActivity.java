@@ -27,7 +27,7 @@ public class NewsActivity extends AppCompatActivity
      * URL for news data from the Guardian
      */
     private static final String GUARDIAN_REQUEST_URL =
-            "http://content.guardianapis.com/search?show-tags=contributor&show-tags=contributor&api-key=test";
+            "http://content.guardianapis.com/search?&api-key=test";
     private NewsAdapter mNewsAdapter;
     private TextView mEmptyStateTextView;
 
@@ -96,6 +96,7 @@ public class NewsActivity extends AppCompatActivity
         // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
+        uriBuilder.appendQueryParameter("show-tags","contributor");
         return new NewsLoader(this, uriBuilder.toString());
     }
 
